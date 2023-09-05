@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/927.6df424f0.chunk.js","mappings":"0IAGA,UAHqB,WACjB,OAAQA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,sBACjB,C","sources":["pages/FavoriteCars/FavoriteCars.jsx"],"sourcesContent":["const FavoriteCars = () => {\n    return (<div>Favorite cars page</div>)\n}\nexport default FavoriteCars;"],"names":["_jsx","children"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest_car_rental=self.webpackChunktest_car_rental||[]).push([[18],{18:function(e,r,t){t.r(r);var a=t(184);r.default=function(){return(0,a.jsx)("div",{children:"Car park page"})}}}]);
+//# sourceMappingURL=18.e377f481.chunk.js.map
