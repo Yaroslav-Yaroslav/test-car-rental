@@ -1,9 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+
 export const GlobalStyle = createGlobalStyle`
-    body {
-  margin: 0;
- 
+
+body {
+font-family: 'Manrope', sans-serif; 
+color: rgba(18, 20, 23, 0.50);
+background-color: #FFFFFF;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.5; 
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -17,9 +23,12 @@ ul, ol {
 }
 
 a {text-decoration: none;
-color: inherit;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus{ color: #277a9d} }
+ }
+ 
+ a:focus,
+button:focus {
+  outline: 1px solid transparent;
+}
 
 img {
   display: block;
