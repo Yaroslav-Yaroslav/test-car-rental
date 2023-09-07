@@ -91,3 +91,21 @@ export const LearnMoreBtn = styled.button`
     background-color: #0b44cd;
   }
 `;
+export const FavoriteBtn = styled.button`
+  position: absolute;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+export const HeartSvg = styled.svg`
+  width: 18px;
+  height: 18px;
+  stroke: #ffffffcc;
+  fill: none;
+`;
