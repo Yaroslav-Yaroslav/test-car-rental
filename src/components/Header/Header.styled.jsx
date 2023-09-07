@@ -3,8 +3,23 @@ import { Link, NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 1224px;
   padding: 0 20px;
+
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1224px) {
+    max-width: 1224px;
+  }
+
+
+
+
 `;
 export const StyledHeader = styled.header`
   padding: 20px 0;

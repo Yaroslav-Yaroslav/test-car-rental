@@ -1,4 +1,5 @@
 import CarsList from 'components/CarsList/CarsList';
+import { Container } from 'components/Header/Header.styled';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 import Loader from 'components/Loader/Loader';
 import { useEffect, useState } from 'react';
@@ -18,13 +19,12 @@ const BookCar = () => {
   }, [dispatch, page]);
 
   return (
-    <>
-      <div>Car park page</div>
+    <Container>
       {isLoading && !error && <Loader />}
       {error && <b>{error}</b>}
       <CarsList />
       {32 / 8 > page && !isLoading && <LoadMoreBtn onClick={onClickBtn} />}
-    </>
+    </Container>
   );
 };
 export default BookCar;
