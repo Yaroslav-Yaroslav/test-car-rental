@@ -8,10 +8,10 @@ const rejectedReducer = (state, action) => {
   state.isLoading = false;
   state.error = action.payload;
 };
-const fetchContactsFulfilledReducer = (state, action) => {
+const fetchCarsFulfilledReducer = (state, action) => {
   state.isLoading = false;
   state.error = null;
-  state.items = action.payload;
+  state.items = [...state.items, ...action.payload];
 };
 
 const carsSlice = createSlice({
@@ -24,7 +24,7 @@ const carsSlice = createSlice({
   extraReducers: builder =>
     builder
       .addCase(fetchCars.pending, pendingReducer)
-      .addCase(fetchCars.fulfilled, fetchContactsFulfilledReducer)
+      .addCase(fetchCars.fulfilled, fetchCarsFulfilledReducer)
       .addCase(fetchCars.rejected, rejectedReducer),
 });
 
