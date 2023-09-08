@@ -16,10 +16,6 @@ export const Container = styled.div`
   @media screen and (min-width: 1224px) {
     max-width: 1224px;
   }
-
-
-
-
 `;
 export const StyledHeader = styled.header`
   padding: 20px 0;
@@ -55,4 +51,11 @@ export const StyledLink = styled(NavLink)`
   &.active {
     color: #3470ff;
   }
+`;
+export const TitleText = styled.div`
+  font-size: 26px;
+  font-weight: 700;
+  color: #3470ff;
+  text-align: justify;
+  margin-top: 50px;
 `;

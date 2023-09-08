@@ -18,8 +18,8 @@ import {
   CloseBtn,
   CloseSvg,
 } from './CarDetails.styled';
-import sprite from '../../images/sprite.svg'
-const CarDetails = ({ car }) => {
+import sprite from '../../images/sprite.svg';
+const CarDetails = ({ car, toggleModal }) => {
   const {
     id,
     year,
@@ -41,9 +41,15 @@ const CarDetails = ({ car }) => {
   const country = address.split(', ')[2];
   const carConditions = rentalConditions.split('\n');
   const ageCarConditions = carConditions[0].split(': ');
+  function formatNumberWithComma(number) {
+    const parts = number.toString().split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return parts.join('.');
+  }
+  const formattedMileage = formatNumberWithComma(mileage);
   return (
     <ModalContainer>
-      <CloseBtn type="button">
+      <CloseBtn type="button" onClick={toggleModal}>
         <CloseSvg>
           <use href={`${sprite}#icon-x-close`} />
         </CloseSvg>
@@ -89,7 +95,7 @@ const CarDetails = ({ car }) => {
           <TextInfo key={index}>{item}</TextInfo>
         ))}
         <TextInfo>
-          Mileage: <AccentTextInfo>{mileage}</AccentTextInfo>
+          Mileage: <AccentTextInfo>{formattedMileage}</AccentTextInfo>
         </TextInfo>
         <TextInfo>
           Price: <AccentTextInfo>{rentalPrice}</AccentTextInfo>

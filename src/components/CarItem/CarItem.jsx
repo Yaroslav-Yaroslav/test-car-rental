@@ -66,7 +66,7 @@ const CarItem = ({ car }) => {
       </Card>
       {showModal && (
         <Modal onClose={toggleModal} showModal={showModal}>
-          <CarDetails car={car} />
+          <CarDetails car={car} toggleModal={toggleModal} />
         </Modal>
       )}
     </>
