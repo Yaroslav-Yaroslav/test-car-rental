@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/test-car-rental/static/css/main.0766009d.css",
-    "main.js": "/test-car-rental/static/js/main.79f15ca6.js",
+    "main.js": "/test-car-rental/static/js/main.df7653b0.js",
     "static/js/544.7270fccc.chunk.js": "/test-car-rental/static/js/544.7270fccc.chunk.js",
-    "static/js/221.3b3b2ca5.chunk.js": "/test-car-rental/static/js/221.3b3b2ca5.chunk.js",
+    "static/js/555.6f65e576.chunk.js": "/test-car-rental/static/js/555.6f65e576.chunk.js",
     "static/js/927.6df424f0.chunk.js": "/test-car-rental/static/js/927.6df424f0.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/test-car-rental/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
     "static/media/Montserrat-Regular.ttf": "/test-car-rental/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "static/media/Manrope-SemiBold.ttf": "/test-car-rental/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
     "static/media/Manrope-Medium.ttf": "/test-car-rental/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
     "static/media/Manrope-Regular.ttf": "/test-car-rental/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
+    "static/media/sprite.svg": "/test-car-rental/static/media/sprite.e3e97832d3aff3991630478b27fda48e.svg",
     "index.html": "/test-car-rental/index.html",
     "main.0766009d.css.map": "/test-car-rental/static/css/main.0766009d.css.map",
-    "main.79f15ca6.js.map": "/test-car-rental/static/js/main.79f15ca6.js.map",
+    "main.df7653b0.js.map": "/test-car-rental/static/js/main.df7653b0.js.map",
     "544.7270fccc.chunk.js.map": "/test-car-rental/static/js/544.7270fccc.chunk.js.map",
-    "221.3b3b2ca5.chunk.js.map": "/test-car-rental/static/js/221.3b3b2ca5.chunk.js.map",
+    "555.6f65e576.chunk.js.map": "/test-car-rental/static/js/555.6f65e576.chunk.js.map",
     "927.6df424f0.chunk.js.map": "/test-car-rental/static/js/927.6df424f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0766009d.css",
-    "static/js/main.79f15ca6.js"
+    "static/js/main.df7653b0.js"
   ]
 }
