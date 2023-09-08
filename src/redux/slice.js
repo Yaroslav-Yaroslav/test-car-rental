@@ -17,9 +17,19 @@ const fetchCarsFulfilledReducer = (state, action) => {
 const carsSlice = createSlice({
   name: 'cars',
   initialState: {
-    items: [],
+      items: [],
+      favorites: [],
     isLoading: false,
     error: null,
+  },reducers: {
+    addFavorite: (state, action) => {
+      state.favorites.push(action.payload);
+    },
+    removeFavorite: (state, action) => {
+      state.favorites = state.favorites.filter(
+        item => item.id !== action.payload.id
+      );
+    }
   },
   extraReducers: builder =>
     builder
@@ -28,4 +38,5 @@ const carsSlice = createSlice({
       .addCase(fetchCars.rejected, rejectedReducer),
 });
 
+export const { addFavorite, removeFavorite } = carsSlice.actions;
 export const carsReducer = carsSlice.reducer;
