@@ -34,7 +34,6 @@ const CarItem = ({ car }) => {
   const dispatch = useDispatch();
   const favorites = useSelector(selectFavorites);
   const isFavorite = favorites.some(favorite => favorite.id === id);
-  console.log("isFavorite:", isFavorite)
 
   const handleClick = () => {
     if (isFavorite) {
