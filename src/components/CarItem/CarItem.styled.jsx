@@ -108,4 +108,10 @@ export const HeartSvg = styled.svg`
   height: 18px;
   stroke: #ffffffcc;
   fill: none;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    stroke: #0b44cd;
+  }
 `;
