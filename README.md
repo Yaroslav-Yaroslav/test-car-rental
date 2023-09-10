@@ -1,4 +1,4 @@
-The site was created using React and Redux.
+<b>The site was created using React and Redux.<b>
 
 GoCar: car rental services offer a convenient and flexible way to travel. With a
 wide range of vehicles to choose from, you can find the perfect car to suit your
