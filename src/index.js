@@ -11,6 +11,7 @@ import './fonts.css';
 import Loader from 'components/Loader/Loader';
 
 const theme = {
+  //testing
   colors: {
     black: '#212121',
     error: 'orangered',
@@ -18,10 +19,10 @@ const theme = {
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={<Loader />} persistor={persistor}>
-        <BrowserRouter>
+        <BrowserRouter basename="/test-car-rental">
           <ThemeProvider theme={theme}>
             <GlobalStyle />
             <App />
@@ -29,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </BrowserRouter>
       </PersistGate>
     </Provider>
-  // </React.StrictMode>
+  </React.StrictMode>
 );
 
 // <BrowserRouter basename="/test-car-rental">
